@@ -6,19 +6,16 @@ public class pan {
 				Scanner sc=new Scanner(System.in);
 				String s=sc.nextLine();
 				int a=s.length();
-				char c[]=new char[a];
-				c=s.toCharArray();
+				
 				String s1="abcdefghijklmnopqrstuvwxyz";
 				int r=s1.length();
-				char c1[]=new char[r];
-				c1=s1.toCharArray();
-				char b;
+				
 				int temp=0;
-				for (int i = 0; i < c.length; i++)
+				for (int i = 0; i < a; i++)
 				{
 					for(int j=0;j<r;j++)
 					{
-						if(c[i]==c1[j])
+						if(s.charAt(i)==s.charAt(j))
 						{
 						temp++;
 						}
